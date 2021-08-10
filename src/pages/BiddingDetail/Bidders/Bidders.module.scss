@@ -1,0 +1,70 @@
+.attachment {
+  display: flex;
+  align-items: center;
+  .link {
+    margin-left: 8px;
+    color: #7B68EE;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: 19px;
+  }
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  .logoWrapper {
+    margin-right: 8px;
+    margin-right: 16px;
+    width: 56px;
+    border: 1px solid #ebebeb;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .avatar {
+      max-width: 100%;
+      
+    }
+  }
+  
+  .info {
+    flex: 1
+  }
+  .entityName {
+    margin-bottom: 7px;
+    color: #222222;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 0;
+    line-height: 22px;
+  }
+  .company {
+    margin-bottom: 0;
+    color: #999999;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 0;
+    line-height: 19px;
+  }
+}
+
+.btnChatNow {
+  height: 40px;
+  border-radius: 6px;
+  background-color: #EDEAFF;
+  padding: 0 24px;
+  color: #7B68EE !important;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 19px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .chatIcon {
+    width: 16px;
+    margin-right: 4px;
+  }
+}

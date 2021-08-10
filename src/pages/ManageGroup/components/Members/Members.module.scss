@@ -1,0 +1,33 @@
+.members {
+  position: relative;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  .avatar {
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-radius: 50%;
+  }
+  .moreMember {
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    left: 96px;
+    top: 0;
+    border-radius: 50%;
+    border: 1px solid #EBEBEB;
+    background-color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #666666;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: 16px;
+    z-index: 5;
+  }
+}

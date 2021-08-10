@@ -1,0 +1,161 @@
+.container {
+  padding: 24px;
+  display: flex;
+  align-items: flex-start;
+  .right {
+    width: 281px;
+    border: 1px solid #EBEBEB;
+    border-radius: 6px;
+    background-color: #FFFFFF;
+    box-shadow: 0 2px 5px 0 #EBEBEB;
+    padding: 24px;
+    .label {
+      margin-bottom: 8px;
+      color: #999999;
+      font-size: 14px;
+      font-weight: 600;
+      letter-spacing: 0;
+      line-height: 19px;
+    }
+  }
+  .left {
+    flex: 1;
+    padding-right: 25px;
+  }
+  .label {
+    color: #999999;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: 19px;
+    margin-bottom: 8px;
+  }
+  .value {
+    color: #222222;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 0;
+    line-height: 22px;
+    margin-bottom: 16px;
+  }
+  .valueNormal {
+  }
+  .attachment {
+    display: flex;
+    align-items: center;
+    .link {
+      margin-left: 8px;
+      color: #7B68EE;
+      font-size: 14px;
+      font-weight: 600;
+      letter-spacing: 0;
+      line-height: 19px;
+    }
+  }
+  .title {
+    color: #222222;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 0;
+    line-height: 27px;
+    margin-bottom: 8px;
+  }
+
+  .box {
+    border: 1px solid #EBEBEB;
+    border-radius: 6px;
+    background-color: #FBFBFB;
+    padding: 16px;
+    margin-bottom: 24px;
+  }
+
+  .row {
+    display: flex;
+    .col {
+      flex: 1;
+      margin-right: 20px;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+    .col2 {
+      flex: 2;
+      margin-right: 20px;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+
+
+  .entity {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+    cursor: pointer;
+    
+    .logoWrapper {
+      margin-right: 8px;
+      width: 40px;
+      border: 1px solid #ebebeb;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .logo {
+        max-width: 100%;
+      }
+    }
+    .entityName {
+      color: #222222;
+      font-size: 16px;
+      font-weight: bold;
+      letter-spacing: 0;
+      line-height: 22px;
+      margin-bottom: 4px;
+    }
+    .company {
+      color: #999999;
+      font-size: 13px;
+      margin-bottom: 0;
+    }
+    .emptyLogo {
+      height: 40px;
+      width: 40px;
+      border: 1px solid #EBEBEB;
+      background-color: #D8D8D8;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #FFFFFF;
+      font-size: 16px;
+      font-weight: bold;
+      letter-spacing: 0;
+      line-height: 22px;
+      text-align: center;
+      margin-right: 8px;
+      border-radius: 50%;
+    }
+    .notPublic {
+      color: #999999;
+      font-size: 16px;
+      font-weight: 600;
+      letter-spacing: 0;
+      line-height: 22px;
+      margin-bottom: 0;
+    }
+  }
+
+  .package {
+    margin-bottom: 8px;
+    .link {
+      color: #7B68EE;
+      font-size: 16px;
+      font-weight: bold;
+      letter-spacing: 0;
+      line-height: 22px;
+      
+    }
+  }
+
+}

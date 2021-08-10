@@ -1,0 +1,67 @@
+.datePickerWrapper {
+  position: relative;
+  margin-bottom: -24px;
+  .iconCalendar {
+    position: absolute;
+    right: 10px;
+    top: 11px;
+    font-size: 14px;
+    color: #635c5c;
+    width: 18px;
+  }
+  .iconRemove {
+    position: absolute;
+    right: 30px;
+    top: 10px;
+    font-size: 14px;
+    color: #635c5c;
+    cursor: pointer;
+  }
+  .inputGroup {
+    display: inline-flex;
+    align-items: center;
+    padding: 20px 23px 0 20px;
+    p {
+      margin: 0;
+      font-size: 14px;
+    }
+  }
+  .dateTime {
+    height: 40px;
+    color: #635c5c;
+    display: block;
+    width: 100%;
+    min-width: 120px;
+    border-radius: 4px;
+    border: 1px solid #bfbfbf;
+    padding: 9px 15px;
+    font-size: 14px;
+    margin: 0 15px 0 0;
+    &::placeholder {
+      color: #AAB2C8;
+      opacity: 1; /* Firefox */
+    }
+  
+    &:-ms-input-placeholder { /* Internet Explorer 10-11 */
+      color: #AAB2C8;
+    }
+  
+    &::-ms-input-placeholder { /* Microsoft Edge */
+      color: #AAB2C8;
+    }
+  }
+
+  .mr0 {
+    margin-right: 0;
+  }
+
+  .error {
+    border: 1px solid red;
+  }
+
+  @media (max-width: 767px) {
+    .dateTime {
+      min-width: 100px;
+    }
+  }
+}

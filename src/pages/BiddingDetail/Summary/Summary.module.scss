@@ -1,0 +1,72 @@
+.summary {
+  display: flex;
+  align-items: center;
+  padding: 24px 24px 0 24px;
+  .logoWrapper {
+    margin-right: 16px;
+    width: 88px;
+    border: 1px solid #ebebeb;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .logo {
+    max-width: 100%;
+   
+  }
+  .info {
+    flex: 1
+  }
+  .row {
+    display: flex;
+    align-items: center;
+  }
+  .entityName {
+    color: #999999;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: 19px;
+    margin-bottom: 0;
+    margin-right: 16px;
+  }
+  .packageName {
+    color: #222222;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 0;
+    line-height: 27px;
+    margin-bottom: 0;
+    margin-top: 20px;
+  }
+
+  .right {
+    text-align: right;
+  }
+
+  .info {
+    color: #999999;
+    font-size: 12px;
+    letter-spacing: 0;
+    line-height: 16px;
+    b {
+      color: #555555;
+      font-weight: 600;
+    }
+  }
+
+  .view {
+    color: #999999;
+    font-size: 12px;
+    letter-spacing: 0;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    b {
+      color: #555555;
+      font-weight: 600;
+    }
+  }
+}

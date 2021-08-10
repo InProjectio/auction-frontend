@@ -1,0 +1,16 @@
+.container {
+  padding: 0px 30px;
+  .content {
+    border-radius: 6px;
+    // background-color: #FFFFFF;
+    box-shadow: 0 1px 5px 0 #EEEEEE;
+  }
+  .empty {
+    text-align: center;
+    margin: 100px 0;
+    font-style: 16px;
+    color: #666666;
+    font-style: italic;
+    padding: 24px 0;
+  }
+}

@@ -1,0 +1,19 @@
+.container {
+  padding: 30px;
+  background-color: #F5F5F5;
+  .content {
+    border-radius: 6px;
+    background-color: #FFFFFF;
+    box-shadow: 0 1px 5px 0 #EEEEEE;
+    display: flex;
+    max-width: 1280px;
+    margin: 0 auto;
+    .left {
+      flex: 1;
+      border-right: 1px solid #ebebeb;
+    }
+    .overview {
+      width: 360px;
+    }
+  }
+}

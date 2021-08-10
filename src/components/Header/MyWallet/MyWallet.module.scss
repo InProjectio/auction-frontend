@@ -1,0 +1,73 @@
+.head {
+  padding: 20px 30px 10px 30px;
+  border-bottom: 1px solid #dddddd;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  .title {
+    margin-bottom: 0;
+    font-weight: bold;
+    font-size: 24px;
+    color: #000000;
+    margin-bottom: 0;
+  }
+}
+.content {
+  padding: 26px 30px;
+  .address {
+    font-size: 18px;
+    color: #7b68ee;
+    font-weight: bold;
+  }
+  .actions {
+    display: flex;
+    align-items: center;
+    .btn {
+      display: flex;
+      align-items: center;
+      color: #7b68ee;
+      font-weight: 500;
+      font-size: 14px;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+    .foreignIcon {
+      width: 16px;
+      vertical-align: middle;
+      margin-left: 6px;
+      margin-top: -4px;
+    }
+    .copyIcon {
+      width: 16px;
+      vertical-align: middle;
+      margin-left: 6px;
+      margin-top: -2px;
+    }
+    .mr20 {
+      margin-right: 20px;
+    }
+  }
+
+  .center {
+    display: flex;
+    justify-content: center;
+    margin-top: 24px;
+  }
+  .logout {
+    height: 40px;
+    padding: 0 20px;
+    border: 1px solid #7b68ee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-style: 14px;
+    color: #7b68ee;
+    font-weight: 500;
+    border-radius: 8px;
+    &:hover {
+      color: #7b68ee;
+      background-color: #f6f6f6;
+    }
+  }
+}

@@ -1,0 +1,212 @@
+.container {
+  padding: 71px 0 0 0px;
+  background-color: #000000;
+  .wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .content {
+      display: flex;
+      align-items: center;
+      .left {
+        margin-right: 100px;
+        .logo {
+          width: 100px;
+          // margin-bottom: 40px;
+        }
+        
+      }
+      .right {
+        flex: 1;
+        .rowBetween {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+        }
+        .row {
+          display: flex;
+          align-items: center;
+          span {
+            font-size: 13px;
+            font-weight: 500;
+            color: #f7f7f7;
+            text-decoration: underline;
+          }
+          
+        }
+        .rowStart {
+            display: flex; 
+            // margin-top: 48px;
+        }
+        .col {
+            margin-right: 45px;
+            .head {
+                font-size: 13px;
+                font-weight: 500;
+                line-height: 1.15;
+                color: #f7f7f7;
+                // margin-bottom: 20px;
+            }
+        }
+        .mr20 {
+            margin-right: 20px;
+        }
+        .language {
+            width: 24px;
+            margin-right: 7px;
+        }
+        .moneyIcon {
+            width: 24px;
+            margin-right: 7px;
+        }
+        .menu {
+            font-size: 13px;
+            font-weight: 500;
+            line-height: 1.15;
+            color: #f7f7f7;
+            text-transform: uppercase;
+            margin-right: 40px;
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+      }
+
+      .socials {
+        display: flex;
+        align-items: center;
+        // margin-bottom: 20px;
+        .icon {
+          width: 24px;
+          margin-right: 20px;
+          &:last-child {
+            margin-right: 0;
+          }
+        }
+      }
+      .text {
+        font-size: 13px;
+        line-height: 1.15;
+        color: #6e7580;
+        margin-bottom: 10px;
+        display: block;
+      }
+  }
+
+  .copyRight {
+    margin-top: 50px;
+    padding-top: 16px;
+    border-top: 1px solid #191919;
+    font-size: 13px;
+    color: #6e7580;
+    padding-bottom: 50px;
+    text-align: center;
+  }
+
+  @media (max-width: 1024px) {
+    padding: 40px 20px;
+    .wrapper {
+      width: 100%;
+      margin: 0;
+    }
+    .content {
+      flex-direction: column;
+      .left {
+        margin-right: 0;
+        .logo {
+          width: 80px;
+          margin-bottom: 25px;
+        }
+        .text {
+          display: inline-block;
+          width: 50%;
+        }
+      }
+      .right {
+        .rowBetween {
+          flex-direction: column;
+          .row {
+            margin-top: 12px;
+            margin-bottom: 12px;
+          }
+        }
+        .langs {
+          width: 100%;
+          .row {
+            margin-top: 0;
+          }
+        }
+        .rowStart {
+          flex-flow: row wrap;
+          .col {
+            width: 50%;
+            margin-right: 0;
+          }
+        }
+      }
+    }
+    .copyRight {
+      font-size: 12px;
+      margin-top: 15px;
+      text-align: center;
+      padding-bottom: 0;
+    }
+  }
+
+  @media (max-width: 767px) {
+    padding: 40px 20px;
+    .wrapper {
+      width: 100%;
+      margin: 0;
+    }
+    .content {
+      flex-direction: column;
+      .left {
+        margin-right: 0;
+        .logo {
+          width: 80px;
+          margin-bottom: 25px;
+        }
+        .text {
+          display: inline-block;
+          width: 50%;
+        }
+      }
+      .right {
+        .rowBetween {
+          flex-direction: column;
+          .row {
+            margin-top: 12px;
+          }
+        }
+        .row {
+          flex-flow: row wrap;
+        }
+        .menu {
+          width: 50%;
+          margin-right: 0;
+          margin-bottom: 12px;
+        }
+        .langs {
+          width: 100%;
+          .row {
+            margin-top: 0;
+          }
+        }
+        .rowStart {
+          flex-flow: row wrap;
+          .col {
+            width: 50%;
+            margin-right: 0;
+          }
+        }
+      }
+    }
+    .copyRight {
+      font-size: 12px;
+      margin-top: 15px;
+      text-align: left;
+      padding-bottom: 0;
+    }
+  }
+}

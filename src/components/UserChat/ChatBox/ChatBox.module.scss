@@ -1,0 +1,117 @@
+.container {
+  background-color: #f1f3f6;
+  border-radius: 20px;
+  height: 100%;
+  position: relative;
+  .messages {
+    // max-height: 450px;
+    // overflow-y: auto;
+  }
+  .inputWrapper {
+    padding: 15px 30px;
+    width: 100%;
+    background-color: #f1f3f6;
+    display: flex;
+    align-items: center;
+    border-radius: 0 0 20px 20px;
+    position: absolute;
+    bottom: 0px;
+    .inputfile {
+      width: 0.1px;
+      height: 0.1px;
+      opacity: 0;
+      overflow: hidden;
+      position: absolute;
+      z-index: -1;
+    }
+    .textarea {
+      box-shadow: none !important;
+      background-color: #ffffff;
+      font-size: 15px;
+      color: #092631;
+      max-height: 200px;
+      outline: 0;
+      width: 100%;
+      border-radius: 10px;
+      padding: 10px 52px 10px 20px;
+      border: 0;
+      resize: none;
+      height: 46px;
+      &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+        color: #787f89;
+      }
+      &::-moz-placeholder { /* Firefox 19+ */
+        color: #787f89;
+      }
+      &:-ms-input-placeholder { /* IE 10+ */
+        color: #787f89;
+      }
+      &:-moz-placeholder { /* Firefox 18- */
+        color: #787f89;
+      }
+    }
+
+    .actions {
+      display: flex;
+      align-items: center;
+      position: absolute;
+      right: 40px;
+      top: 50%;
+      transform: translateY(-50%);
+      .btn {
+        margin-right: 10px;
+        .icon {
+          width: 24px;
+        }
+        .sendPhotoLabel {
+          margin-bottom: 0;
+        }
+      }
+      .btnSend {
+        width: 32px;
+        height: 32px;
+        background-color: #c91e33;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .sendIcon {
+          width: 20px;
+        }
+      }
+    }
+
+    .images {
+      display: flex;
+      align-items: center;
+      padding: 15px 20px 8px 20px;
+      .imageWrapper {
+        margin-right: 12px;
+        position: relative;
+        .photo {
+          width: 48px;
+          height: 48px;
+          border-radius: 10px;
+          object-fit: cover;
+        }
+        .btnRemove {
+          position: absolute;
+          top: -12px;
+          right: -12px;
+          width: 24px;
+          height: 24px;
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background-color: #ffffff;
+          .closeIcon {
+            width: 16px;
+            height: 16px;
+          }
+        }
+      }
+    }
+  
+  }
+}

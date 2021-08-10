@@ -1,0 +1,63 @@
+.container {
+  text-align: center;
+  .title {
+    color: #222222;
+    font-size: 32px;
+    font-weight: bold;
+    letter-spacing: 0;
+    line-height: 43px;
+    margin-bottom: 8px;
+    text-align: center;
+  }
+
+  .icon {
+    width: 97px;
+    margin-bottom: 24px;
+  }
+
+  .message {
+    font-size: 16px;
+    color: #333333;
+    margin-bottom: 32px;
+  }
+
+  .note {
+    font-size: 14px;
+    color: #000000;
+    margin-bottom: 4px;
+  }
+
+  .signin {
+    font-size: 14px;
+    color: #000000;
+    .link {
+      color: #7463FC;
+    }
+  }
+
+  .btnLogin {
+    height: 48px;
+    border-radius: 6px;
+    background-color: #7B68EE;
+    box-shadow: 0 2px 5px 0 #B7AEEB;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 0;
+    line-height: 22px;
+    width: 100%;
+    border: 0;
+    outline: 0;
+  }
+
+  .redirect {
+    margin-top: 8px;
+    margin-bottom: 20px;
+    font-size: 15px;
+    color: #666666;
+  }
+
+}

@@ -1,0 +1,57 @@
+.container {
+  .title {
+    color: #222222;
+    font-size: 32px;
+    font-weight: bold;
+    letter-spacing: 0;
+    line-height: 43px;
+    margin-bottom: 32px;
+    text-align: center;
+  }
+
+  .btnLogin {
+    height: 48px;
+    border-radius: 6px;
+    background-color: #7B68EE;
+    box-shadow: 0 2px 5px 0 #B7AEEB;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 0;
+    line-height: 22px;
+    width: 100%;
+    border: 0;
+    outline: 0;
+  }
+
+  .end {
+    border-bottom: 1px solid #ebebeb;
+    margin-bottom: 16px;
+    .forgotPassword {
+      font-size: 14px;
+      color: #7b68ee !important;
+      font-weight: bold;
+      display: block;
+      text-align: center;
+      padding: 24px 0;
+    }
+    
+  }
+
+  .signup {
+    display: block;
+    text-align: center;
+    color: #999999;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: 22px;
+    span {
+      color: #7b68ee !important;
+      font-weight: bold;
+    }
+  }
+}

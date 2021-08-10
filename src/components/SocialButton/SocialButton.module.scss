@@ -1,0 +1,13 @@
+.btn {
+  height: 45px;
+  border-radius: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  color: #ffffff;
+  width: 100%;
+  &[data-style=contract] {
+    width: 100%;
+  }
+}

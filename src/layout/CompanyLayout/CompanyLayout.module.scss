@@ -1,0 +1,120 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  .btnCreateTask {
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 32px;
+    border-radius: 8px;
+    padding: 0 8px;
+    box-shadow: 0 3px 10px -3px #7b68ee;
+    z-index: 99;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1;
+    color: #fff;
+    margin: 0 0 0 8px;
+    background-color: #7b68ee;
+    transition: all .2s cubic-bezier(.785,.135,.15,.86) 0s;
+    .plusIcon {
+      width: 16px;
+      margin-right: 8px;
+    }
+    &:hover {
+      transform: scale(1.07,1.15);
+      background-color: #5b43ea;
+      color: #ffffff;
+    }
+  }
+  .sideBar {
+    height: calc(100vh);
+    overflow-y: auto;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 281px;
+    z-index: 99;
+    padding-top: 0;
+  }
+  .sideBarCollapseWrapper {
+    width: 53px;
+    &:hover {
+      width: 281px;
+    }
+  }
+  .backdrop {
+    z-index: 100;
+  }
+  .header {
+    position: fixed;
+    top: 0;
+    z-index: 90;
+    background-color: #f7f9fb;
+    left: 281px;
+    width: calc(100% - 281px);
+    @media (max-width: 1024px) {
+      width: 100%;
+      transform: translate3d(0, 0, 0) !important;
+    }
+  }
+  .headerCollapse {
+    left: 53px;
+    width: calc(100% - 53px);
+  }
+  .content {
+    padding-top: 0px;
+    flex: 1;
+    .main {
+      // padding-left: 281px;
+      min-height: calc(100vh);
+      padding: 90px 20px 30px 20px;
+      overflow: hidden;
+      background-color: #F5F5F5;
+      @media (max-width: 1024px) {
+        width: 100% !important;
+        margin-left: 0;
+      }
+    }
+    .showMenu {
+      width: calc(100% - 281px);
+      margin-left: 281px;
+      transition: all 0.5s ease 0s;
+    }
+    .showMenuCollapse {
+      width: calc(100% - 53px);
+      margin-left: 53px;
+      transition: all 0.5s ease 0s;
+    }
+    .noTransition {
+      transition: none !important;
+    }
+
+    @media (max-width: 767px) {
+      .sideBar {
+        display: none;
+      }
+      .main {
+        padding-left: 0;
+        padding: 82px 0 40px 0;
+      }
+    }
+  }
+
+  .sideBarMobile {
+    display: block;
+    position: fixed;
+    top: 60px;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+  }
+  .sideBarShow {
+    @media(max-width: 1024px) {
+      z-index: 101;
+    }
+  }
+}

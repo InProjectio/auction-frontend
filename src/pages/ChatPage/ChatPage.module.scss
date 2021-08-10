@@ -1,0 +1,175 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  height: calc(100vh - 64px);
+  box-shadow: 0 0.46875rem 2.1875rem rgba(4,9,20,0.03), 0 0.9375rem 1.40625rem rgba(4,9,20,0.03), 0 0.25rem 0.53125rem rgba(4,9,20,0.05), 0 0.125rem 0.1875rem rgba(4,9,20,0.03);
+  border-width: 0;
+  transition: all .2s;
+  background-color: #fff;
+  border-radius: 4px;
+  .left {
+    width: 281px;
+    height: 100%;
+    overflow-y: auto;
+    background-color: #ffffff;
+    border-right: 1px solid #dddddd;
+  }
+  .right {
+    width: 281px;
+    height: 100%;
+    overflow-y: auto;
+    background-color: #ffffff;
+    border-left: 1px solid #dddddd;
+  }
+  .between {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    position: relative;
+    .inputWrapper {
+      position: relative;
+      bottom: 0px;
+      margin: 20px;
+      width: calc(100% - 40px);
+      // background-color: rgba(255, 255, 255, 0.25);
+      background-color: #f1f1f4;
+      border-radius: 4px;
+      border: solid 1px #BFC7CA;
+      .inputFieldWrapper {
+        position: relative;
+      }
+      .inputfile {
+        width: 0.1px;
+        height: 0.1px;
+        opacity: 0;
+        overflow: hidden;
+        position: absolute;
+        z-index: -1;
+      }
+
+      .images {
+        display: flex;
+        align-items: center;
+        padding: 15px 20px 8px 20px;
+        .imageWrapper {
+          margin-right: 12px;
+          position: relative;
+          .filename {
+            font-size: 14px;
+            color: #666666;
+          }
+          .photo {
+            width: 48px;
+            height: 48px;
+            border-radius: 10px;
+            object-fit: cover;
+          }
+          .btnRemove {
+            position: absolute;
+            top: -12px;
+            right: -12px;
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #ffffff;
+            .closeIcon {
+              width: 16px;
+              height: 16px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .sugestionHidden {
+    padding-bottom: 80px;
+  }
+  
+
+
+  .textarea {
+    box-shadow: none !important;
+    border: 0;
+    font-size: 16px;
+    color: #222222;
+    max-height: 250px;
+    outline: 0;
+    width: 100%;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    padding: 10px 20px;
+    padding-right: 80px;
+    &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+      color: #8d92a3;
+    }
+    &::-moz-placeholder { /* Firefox 19+ */
+      color: #8d92a3;
+    }
+    &:-ms-input-placeholder { /* IE 10+ */
+      color: #8d92a3;
+    }
+    &:-moz-placeholder { /* Firefox 18- */
+      color: #8d92a3;
+    }
+  }
+
+  .Modal {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    right: 40px;
+    bottom: 40px;
+    background-color: green;
+  }
+
+  .Overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #00000080;
+  }
+  .inputfile {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+  }
+
+  .actions {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    .btn {
+      margin-right: 10px;
+      .icon {
+        width: 24px;
+      }
+      .sendPhotoLabel {
+        margin-bottom: 0;
+      }
+    }
+    .btnSend {
+      width: 32px;
+      height: 32px;
+      background-color: #7B68EE;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .sendIcon {
+        width: 20px;
+      }
+    }
+  }
+}

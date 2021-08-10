@@ -1,0 +1,116 @@
+.conversation {
+  padding: 14px 20px;
+  border-bottom: 1px solid #dddddd;
+  cursor: pointer;
+  .row {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 8px;
+  }
+ 
+  .logoWrapper {
+    position: relative;
+    height: 40px;
+    margin-right: 10px;
+    .logo {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 1px solid #ebebeb;
+      background-color: #f5f5f5;
+    }
+    .logo2 {
+      position: absolute;
+      left: -10px;
+      top: 0;
+    }
+  }
+
+  .info {
+    flex: 1
+  }
+  .rowBetween {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .title {
+    font-size: 14px;
+    color: #333333;
+    margin-bottom: 0;
+    flex: 1;
+    font-weight: bold;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: 125px;
+    white-space: nowrap;
+    margin-right: 8px;
+  }
+  .subTitle {
+    font-size: 12px;
+    color: #666666;
+    margin-bottom: 0;
+    font-weight: 600;
+  }
+  .time {
+    font-size: 10px;
+    color: #999999;
+    margin-bottom: 0;
+    margin-top: 2px;
+  }
+  .adminName {
+    font-size: 13px;
+    color: #333333;
+    margin-bottom: 8px;
+  }
+  .lastMessage {
+    font-size: 13px;
+    color: #666666;
+    margin-bottom: 0;
+    flex: 1;
+    max-height: 4.8em;
+    line-height: 1.2em;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+    overflow: hidden;
+  }
+  .unreadMessage {
+    // width: 16px;
+    height: 18px;
+    background-color: #007aff;
+    text-align: center;
+    border-radius: 50%;
+    color: #ffffff;
+    font-size: 11px;
+    font-weight: bold;
+    padding: 0 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+  }
+  .mb0 {
+    margin-bottom: 0 !important;
+  }
+  .unread {
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    margin-left: 10px;
+    background-color: #197de9;
+  }
+  .read {
+    background-color: transparent;
+  }
+  
+}
+.active {
+  background-color: #E4E1FC;
+}
+
+.unreaded {
+  .title {
+    font-weight: bold;
+  } 
+}

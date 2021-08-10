@@ -1,0 +1,110 @@
+.container {
+  .item {
+    padding: 32px 32px 20px 32px;
+    border: 1px solid #EBEBEB;
+    border-radius: 6px;
+    background-color: #FFFFFF;
+    box-shadow: 0 2px 5px 0 #EBEBEB;
+    margin-bottom: 16px;
+    .content {
+      display: flex;
+      align-items: flex-start;
+      padding-bottom: 13px;
+      border-bottom: 1px solid #ebebeb;
+      .logoWrapper {
+        width: 120px;
+        border: 1px solid #EBEBEB;
+        border-radius: 6px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 24px;
+        .logo {
+          max-width: 100%;
+        }
+      }
+      .info {
+        flex: 1;
+        .packageName {
+          color: #222222;
+          font-size: 20px;
+          font-weight: bold;
+          letter-spacing: 0;
+          line-height: 27px;
+          margin-bottom: 8px;
+        }
+        .entity {
+          color: #555555;
+          font-size: 14px;
+          font-weight: bold;
+          letter-spacing: 0;
+          line-height: 19px;
+          margin-bottom: 4px;
+        }
+
+        .text {
+          color: #999999;
+          font-size: 14px;
+          font-weight: 600;
+          letter-spacing: 0;
+          line-height: 19px;
+          margin-bottom: 0;
+        }
+      }
+    }
+
+    .bottom {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-top: 8px;
+      .left {
+        display: flex;
+        align-items: center;
+      }
+  
+      .info {
+        color: #999999;
+        font-size: 12px;
+        letter-spacing: 0;
+        line-height: 16px;
+        margin-right: 16px;
+        margin-bottom: 0;
+        b {
+          font-weight: 600;
+          color: #555555;
+        }
+      }
+  
+      .view {
+        color: #999999;
+        font-size: 12px;
+        letter-spacing: 0;
+        line-height: 16px;
+        text-align: center;
+        margin-right: 16px;
+        b {
+          font-weight: 600;
+          color: #555555;
+        }
+        .eyeIcon {
+          margin-right: 4px;
+        }
+        b {
+          margin-left: 4px;
+        }
+      }
+  
+      .totalBidders {
+        color: #555555;
+        font-size: 14px;
+        font-weight: 600;
+        letter-spacing: 0;
+        line-height: 19px;
+        margin-bottom: 0;
+      }
+    }
+
+    
+  }
+}

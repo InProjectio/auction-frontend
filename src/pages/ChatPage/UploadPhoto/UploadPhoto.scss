@@ -1,0 +1,27 @@
+
+.imgBg {
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    align-items: center;
+    position: relative;
+  }
+  
+  .lagerPhoto {
+    max-width: 100%;
+    max-height: 90%;
+    // height: auto;
+    object-fit: cover;
+    display: block;
+    margin: auto;
+  }
+
+  .sendButton {
+      height: 44px;
+      width: 100px;
+      position: absolute;
+      right: 5%;
+      bottom: -5px;
+      color: white;
+      background-color:#337ab7;
+  }

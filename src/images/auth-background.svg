@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="813px" height="1150px" viewBox="0 0 813 1150" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>64E1D405-A71B-4E4B-89CF-80ADA78B4850</title>
+    <defs>
+        <linearGradient x1="51.9492891%" y1="46.889537%" x2="51.9492891%" y2="146.889537%" id="linearGradient-1">
+            <stop stop-color="#7B68EE" offset="0%"></stop>
+            <stop stop-color="#B2A1F8" offset="100%"></stop>
+        </linearGradient>
+        <rect id="path-2" x="0" y="0" width="813" height="1150"></rect>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="99.5549129%" id="linearGradient-4">
+            <stop stop-color="#806DEF" offset="0%"></stop>
+            <stop stop-color="#787DF1" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="99.5549129%" id="linearGradient-5">
+            <stop stop-color="#8977F1" offset="0%"></stop>
+            <stop stop-color="#AB85F3" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="BG">
+            <g id="Oval">
+                <mask id="mask-3" fill="white">
+                    <use xlink:href="#path-2"></use>
+                </mask>
+                <use id="Mask" fill="url(#linearGradient-1)" xlink:href="#path-2"></use>
+                <circle fill-opacity="0.8" fill="#7F6BF3" mask="url(#mask-3)" cx="151.5" cy="144.5" r="232.5"></circle>
+            </g>
+            <circle id="Oval-Copy" fill-opacity="0.6" fill="url(#linearGradient-4)" cx="574" cy="581" r="146"></circle>
+            <circle id="Oval-Copy-2" fill-opacity="0.3" fill="url(#linearGradient-5)" cx="345" cy="791" r="213"></circle>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,35 @@
+.label {
+  font-size: 15px;
+  line-height: 1.2;
+  margin-right: 10px;
+}
+
+.icon {
+  width: 18px;
+}
+
+.dropdownMenu {
+  right: 0 !important;
+    left: auto !important;
+    border-radius: 3px;
+    box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.16);
+    background-color: #ffffff;
+    border: 0;
+    padding: 18px 10px 22px;
+    top: 10px !important;
+}
+
+.dropdownItem {
+  border-bottom: 0;
+  padding: 10px 15px;
+  border-radius: 4px;
+}
+
+.optionLabel {
+  font-size: 14px;
+  line-height: 1.14;
+}
+
+.menu {
+  padding: 0;
+}

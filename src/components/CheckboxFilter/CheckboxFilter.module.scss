@@ -1,0 +1,59 @@
+
+// @import url(//netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.css);
+
+.menuList {
+  margin: 0;
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.checkbox {
+  display: none;
+}
+
+.label {
+  margin: 0;
+}
+
+.filterOption {
+  display: flex;
+  align-items: center;
+}
+
+.checkbox {
+  display: none;
+}
+
+.checkboxCustom {
+  width: 18px;
+  height: 18px;
+  border-radius: 2px;
+  border: solid 1px #092631;
+  background-color: #ffffff;
+  margin-right: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #3f6ad8;
+}
+
+.checkIcon {
+  height: 10px;
+  width: 10px;
+  display: none;
+}
+
+.checkbox:checked ~ .checkboxCustom {
+  .checkIcon {
+    display: unset;
+  }
+}
+
+// .checkboxCustom:checked + .label:after {
+//   font-family: "FontAwesome";
+//   content: '\f00c';
+//   padding: 2px;
+//   text-align: center;
+//   top: 2px;
+//   left: 5px;
+// }

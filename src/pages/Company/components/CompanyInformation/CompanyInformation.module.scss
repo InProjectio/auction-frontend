@@ -1,0 +1,56 @@
+.container {
+  .head {
+    padding: 32px 32px 24px 32px;
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 0;
+    line-height: 32px;
+    color: #222222;
+    border-bottom: 1px solid #ebebeb;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .content {
+    padding: 24px 32px;
+  }
+}
+
+.btnSave {
+  display: flex;
+  align-items: center;
+  height: 48px;
+  border-radius: 6px;
+  background-color: #7B68EE;
+  padding: 0 16px;
+  color: #FFFFFF;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 0;
+    line-height: 19px;
+    border: 0;
+  .saveIcon {
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+    
+  }
+}
+
+.actions {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px 32px;
+  border-top: 1px solid #ebebeb;
+}
+
+.row {
+  display: flex;
+  .col {
+    flex: 1;
+    margin-right: 16px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}

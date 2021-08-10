@@ -1,0 +1,38 @@
+.inputField {
+  font-size: 14px !important;
+  padding-right: 40px !important;
+}
+.inputWrapper {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  .left {
+    flex: 1;
+    margin-right: 15px;
+    position: relative;
+  }
+
+  .right {
+    flex: 1;
+    position: relative;
+  }
+
+  .unit {
+    margin-bottom: 0;
+    font-size: 10px;
+    line-height: 1.1;
+    color: #6e7580;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 8px;
+  }
+}
+
+.inputRangerWrapper {
+  padding: 20px 8px;
+  .inputRanger {
+    background: #c91e33;
+    border: 1px solid #c91e33;
+  }
+}

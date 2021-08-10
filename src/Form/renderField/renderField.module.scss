@@ -1,0 +1,57 @@
+.container {
+}
+
+.errorMessage {
+  font-size: 12px;
+  line-height: 1.67;
+  margin-top: 10px;
+  display: block;
+  color: #ff6565;
+}
+
+.labelWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.label {
+  font-size: 14px;
+  color: #999999;
+  line-height: 19px;
+  margin-bottom: 8px;
+  display: block;
+  font-weight: 600;
+}
+
+.subLabel {
+  font-size: 12px;
+  color: #4c5057;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.smallLabel {
+  font-size: 13px;
+  color: #666666;
+  margin-top: 10px;
+  margin-bottom: 0
+}
+
+.required {
+  font-size: 16px;
+  line-height: 1.25;
+  color: #ff6565;
+}
+
+.mb20 {
+  margin-bottom: 20px;
+}
+
+.note {
+  font-size: 12px;
+  color: #888888;
+  margin-top: 10px;
+  margin-bottom: 0;
+  font-style: italic;
+}

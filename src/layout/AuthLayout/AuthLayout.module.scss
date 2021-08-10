@@ -1,0 +1,54 @@
+.container {
+  height: 100vh;
+  display: flex;
+  .left {
+    flex: 1;
+    background-image: url("../../images/auth-background.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .title {
+      color: #AB9DFF;
+      font-size: 48px;
+      font-weight: bold;
+      letter-spacing: 0;
+      line-height: 64px;
+      margin-bottom: 0;
+      position: relative;
+      &:after {
+        position: absolute;
+        height: 36px;
+        width: 4px;
+        background-color: #AB9DFF;
+        left: -24px;
+        top: 13px;
+        content: '';
+      }
+    }
+    
+    span {
+      color: #ffffff;
+    }
+  }
+
+  .screen {
+    flex: 1;
+    background-color: #ffffff;
+    padding: 0 80px;
+    .logo {
+      margin-top: 40px;
+      margin-left: 80px;
+      width: 162px;
+    }
+
+    .main {
+      max-width: 500px;
+      width: 100%;
+      margin: 0 auto;
+      margin-top: 150px;
+    }
+  }
+  
+}

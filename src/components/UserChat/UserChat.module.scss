@@ -1,0 +1,61 @@
+.container{
+  .iconWrapper {
+    box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.1);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    bottom: 20px;
+    right: 50px;
+    cursor: pointer;
+    z-index: 98;
+    .commentIcon {
+      width: 24px;
+      height: 24px;
+    }
+
+    .numberMessages {
+      position: absolute;
+      background-color: #c91e33;
+      color: #ffffff;
+      font-size: 12px;
+      font-weight: bold;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      top: -12px;
+      right: -1px;
+    }
+  }
+
+  .chatBox {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    box-shadow: 0 1px 20px 0 rgba(0, 0, 0, 0.25);
+    background-color: #ffffff;
+    width: 450px;
+    height: 600px;
+    border-radius: 20px;
+    z-index: 99;
+  }
+
+  @media (max-width: 767px) {
+    .chatBox {
+      width: 100%;
+      height: calc(100%);
+      z-index: 99999;
+      bottom: 0;
+      top: 0;
+      left: 0;
+      overflow: hidden;
+    }
+  }
+}

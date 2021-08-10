@@ -1,0 +1,29 @@
+.container {
+  max-width: 400px;
+  margin: 0 auto;
+  .addVideoWrapper {
+    border: 1px solid #dddddd;
+    padding: 20px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    a {
+      height: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid #dddddd;
+      padding: 0 30px;
+      border-radius: 8px;
+    }
+  }
+  .file {
+    opacity: 0;
+    position: absolute;
+    z-index: -1;
+  }
+  .video {
+    margin-bottom: 16px;
+  }
+}
+

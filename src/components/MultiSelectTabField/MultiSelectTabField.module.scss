@@ -1,0 +1,49 @@
+.options {
+  display: flex;
+  align-items: center;
+  flex-flow: row wrap;
+  .option {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    cursor: pointer;
+    border-radius: 4px;
+    border: solid 1px #d7d8d9;
+    min-width: 50px;
+    padding: 0 15px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    &:last-child {
+      margin-right: 0;
+    }
+    .label {
+      font-size: 15px;
+      color: #000000;
+      line-height: 1.2;
+    }
+  }
+
+  .disabled {
+    background-color: rgba(0,0,0,0.1);
+    pointer-events: none;
+  }
+
+  .active {
+    border: solid 1px #c91e33;
+    .label {
+      color: #c91e33;
+    }
+    
+  }
+  
+}
+
+.sm {
+  .option {
+    height: 30px;
+    border-radius: 3px;
+    font-size: 13px;
+    padding: 0 12px;
+  }
+}

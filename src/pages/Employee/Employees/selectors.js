@@ -1,0 +1,9 @@
+import { createSelector } from 'reselect'
+import { initialState } from './Slices'
+
+export const selectEmployees = (state) => state.employees || initialState
+
+export const makeSelectEmployeesData = () => createSelector(
+  selectEmployees,
+  (state) => state.employeesData
+)

@@ -1,0 +1,20 @@
+.attachmentType {
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: bold;
+  .image {
+    width: 40px;
+  }
+  .imageFile {
+    width: 40px;
+  }
+}
+
+.sm {
+  .image {
+    width: 20px;
+  }
+  .imageFile {
+    width: 20px;
+  }
+}

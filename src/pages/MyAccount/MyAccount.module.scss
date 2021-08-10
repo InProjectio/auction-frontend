@@ -1,0 +1,130 @@
+.container {
+  background-color: #f5f5f5;
+  padding: 30px;
+  min-height: calc(100vh - 64px);
+  .content {
+    max-width: 600px;
+    margin: 0 auto;
+    border-radius: 6px;
+    background-color: #FFFFFF;
+    box-shadow: 0 1px 5px 0 #EEEEEE;
+  }
+  .header {
+    padding: 32px 24px 24px 24px;
+    border-bottom: 1px solid #ebebeb;
+  }
+  .wrapper {
+    padding: 24px;
+  }
+  .title {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 0;
+    text-align: left;
+  }
+  .row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 35px;
+  }
+  .avatarWrapper {
+    position: relative;
+    margin-right: 30px;
+    .avatar {
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+    }
+    .cameraWrapper {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      width: 32px;
+      height: 32px;
+      box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
+      background-color: #ffffff;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .camera {
+        width: 20px;
+      }
+    }
+  }
+  .info {
+    flex: 1;
+    .name {
+      font-size: 18px;
+      font-weight: 500;
+      color: #171c22;
+      margin-bottom: 10px;
+    }
+    .email {
+      font-size: 15px;
+      color: #787f89;
+      margin-bottom: 10px;
+    }
+    .text {
+      font-size: 15px;
+      color: #171c22;
+      margin-bottom: 10px;
+      white-space: nowrap;
+      .note {
+        color: #eb6005;
+        font-weight: bold;
+        font-style: italic;
+      }
+    }
+
+    .actions {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  .form {
+    max-width: 550px;
+    .note {
+      font-size: 15px;
+      margin-bottom: 20px;
+      white-space: nowrap;
+      color: #eb6005;
+      font-weight: bold;
+      font-style: italic;
+    }
+    .mb20 {
+      margin-bottom: 20px;
+    }
+    .row {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 0;
+      .col {
+        width: calc(50% - 10px);
+      }
+    }
+    .customInput {
+      margin-bottom: 8px;
+    }
+
+    .publicKey {
+      position: relative;
+      .actions {
+        position: absolute;
+        right: 10px;
+        top: 32px;
+      }
+      .saving {
+        position: absolute;
+        right: -20px;
+        top: 0;
+        width: 200px;
+      }
+    }
+  }
+
+  .btnConfirm {
+    width: 100%;
+  }
+}

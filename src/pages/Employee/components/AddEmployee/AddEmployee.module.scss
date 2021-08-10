@@ -1,0 +1,82 @@
+.head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 24px 24px 16px 32px;
+  border-bottom: 1px solid #EBEBEB;
+  .title {
+    color: #222222;
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 0;
+    line-height: 32px;
+    margin-bottom: 0;
+  }
+}
+
+.content {
+  padding: 24px;
+  .item {
+    border-bottom: 1px solid #ebebeb;
+  }
+
+  .rowBetween {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 16px;
+    margin-top: 16px;
+    .title {
+      margin-bottom: 0;
+    }
+  }
+
+  .addEmployee {
+    display: flex;
+    align-items: center;
+    color: #7B68EE;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 0;
+    line-height: 19px;
+    margin-top: 16px;
+    .iconWrapper {
+      width: 16px;
+      height: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      background-color: #7B68EE;
+     
+      margin-right: 4px;
+      .plusIcon {
+        width: 10px;
+        
+      }
+    }
+
+    &:hover {
+      color: #7B68EE;
+    }
+  }
+}
+
+.actions {
+  padding: 16px 24px;
+  display: flex;
+  justify-content: flex-end;
+  border-top: 1px solid #ebebeb;
+}
+
+.row {
+  display: flex;
+  align-items: flex-start;
+  .position {
+    flex: 2;
+    margin-right: 16px;
+  }
+  .role {
+    flex: 1
+  }
+}

@@ -1,0 +1,43 @@
+
+.container {
+  @media (max-width: 767px) {
+    padding-bottom: 50px;
+  }
+  .note {
+    font-size: 16px;
+    color: #666666;
+    font-style: italic;
+    margin-bottom: 16px;
+  }
+  
+  .row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    position: relative;
+    .title {
+      font-size: 23px;
+      font-weight: 500;
+      color: #000000;
+      margin-bottom: 0
+    }
+    .btnClose {
+      position: absolute;
+      right: 15px;
+      top: 15px
+    }
+    .closeIcon {
+      width: 24px;
+      height: 24px;
+    }
+  }
+
+    @media (max-width: 767px) {
+      .row {
+        .btnClose {
+          top: 22px;
+        }
+      }
+    }
+}

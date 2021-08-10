@@ -1,0 +1,29 @@
+.container {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #d7d8d9;
+  .option {
+    font-size: 15px;
+    font-weight: 500;
+    color: #6e7580;
+    cursor: pointer;
+    padding: 12px 0;
+    margin-right: 30px;
+    &:hover {
+      color: #c91e33;
+    }
+  }
+  .active {
+    color: #c91e33;
+    position: relative;
+    &:after {
+      position: absolute;
+      content: '';
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 2px;
+      background-color: #c91e33;
+    }
+  }
+}

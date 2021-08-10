@@ -1,0 +1,27 @@
+.checked {
+  margin-right: 10px;
+  width: 25px;
+  height: 25px;
+  @media (max-width: 767px) {
+    margin-right: 10px;
+  }
+}
+.checkboxWrapper {
+  width: 25px;
+  height: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.check {
+  width: 22px;
+  height: 22px;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  span {
+    flex: 1
+  }
+}

@@ -1,0 +1,63 @@
+.btnDelete {
+  border: 1px solid rgba(242,78,78, 0.3);
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  margin-left: 16px;
+  .deleteIcon {
+    font-size: 16px;
+    color: #f24e4e;
+    width: 14px;
+  }
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.input {
+  box-shadow: none !important;
+  height: 48px;
+  border-radius: 6px;
+  border: solid 1px #ebebeb;
+  background-color: #ffffff;
+  font-size: 16px;
+  color: #222222;
+  font-weight: bold;
+  outline: 0;
+  padding: 0 15px;
+  width: 100%;
+  flex: 1;
+  &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: #8d92a3;
+  }
+  &::-moz-placeholder { /* Firefox 19+ */
+    color: #8d92a3;
+  }
+  &:-ms-input-placeholder { /* IE 10+ */
+    color: #8d92a3;
+  }
+  &:-moz-placeholder { /* Firefox 18- */
+    color: #8d92a3;
+  }
+}
+
+.disabled {
+  background-color: #efefef !important;
+  pointer-events: none;
+}
+
+.noAction {
+  pointer-events: none;
+  opacity: 0.6;
+}
+
+.actions {
+  display: flex;
+  justify-content: flex-start;
+}

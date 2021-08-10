@@ -1,0 +1,104 @@
+.hamburger {
+  padding: 0px 0px;
+  display: inline-block;
+  cursor: pointer;
+  transition-property: opacity, filter;
+  transition-duration: 0.15s;
+  transition-timing-function: linear;
+  font: inherit;
+  color: inherit;
+  text-transform: none;
+  background-color: transparent;
+  border: 0;
+  margin: 0;
+  overflow: visible;
+  outline: none !important;
+}
+
+.closeSidebarBtn {
+  
+}
+
+.hamburgerElastic {
+ 
+}
+
+.hamburgerBox {
+  width: 24px;
+  height: 14px;
+  display: inline-block;
+  position: relative;
+}
+
+.hamburgerInner {
+  width: 24px;
+  height: 2px;
+  background-color: #999999;
+  border-radius: 10px;
+  position: absolute;
+  transition-property: transform;
+  transition-duration: 0.15s;
+  transition-timing-function: ease;
+  top: 1px;
+  transition-duration: 0.275s;
+  transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  display: block;
+  top: 4px;
+  margin-top: -1px;
+  &:before {
+    width: 24px;
+    height: 2px;
+    background-color: #999999;
+    border-radius: 10px;
+    position: absolute;
+    transition-property: transform;
+    transition-duration: 0.15s;
+    transition-timing-function: ease;
+    top: 6px;
+    transition: opacity 0.125s 0.275s ease;
+    content: "";
+    display: block;
+  }
+  &:after {
+    width: 24px;
+    height: 2px;
+    background-color: #999999;
+    border-radius: 10px;
+    position: absolute;
+    transition-property: transform;
+    transition-duration: 0.15s;
+    transition-timing-function: ease;
+    top: 12px;
+    transition: transform 0.275s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    bottom: -6px;
+    content: "";
+    display: block;
+  }
+}
+
+.active {
+  .hamburgerInner {
+    transform: translate3d(0, 6px, 0) rotate(135deg);
+    transition-delay: 0.075s;
+    &:before {
+      transition-delay: 0s;
+      opacity: 0;
+    }
+    &:after {
+      transform: translate3d(0, -12px, 0) rotate(-270deg);
+      transition-delay: 0.075s;
+    }
+  }
+}
+
+.white {
+  .hamburgerInner {
+    background-color: #ffffff;
+    &:after {
+      background-color: #ffffff;
+    }
+    &:before {
+      background-color: #ffffff;
+    }
+  }
+}

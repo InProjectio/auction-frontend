@@ -1,0 +1,44 @@
+.container{
+  border:1px solid #dfdfe0;
+  &:hover {
+    box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.1);
+  }
+  // margin-right: 20px;
+  .contentImg{
+    display: flex;
+    padding: 5px;
+    justify-content: space-between;
+    height: 144px;
+    overflow: hidden;
+    .img{
+      width: calc(100% / 3 - 3px);
+      height: 144px;
+      object-fit: cover;
+    }
+  }
+  .content{
+    background-color:#dfdfe0;
+    .title{
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 1.2;
+      margin: 0;
+      padding: 20px 0 12px 20px;
+    }
+    .text{
+      margin: 0;
+      padding: 0 0 20px 20px;
+      font-size: 14px;
+      color: #4c5057;
+    }
+  }
+
+  @media (max-width: 767px) {
+    margin-right: 0;
+    .content {
+      .title {
+        font-size: 15px;
+      }
+    }
+  }
+}

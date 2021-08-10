@@ -1,0 +1,54 @@
+.container {
+  border-radius: 6px;
+  background-color: #FFFFFF;
+  box-shadow: 0 1px 5px 0 #EEEEEE;
+  margin-top: 16px;
+  .chatIcon {
+    width: 16px;
+    margin-right: 8px;
+  }
+  .header {
+    padding: 32px 32px 16px 32px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ebebeb;
+    .left {
+      display: flex;
+      align-items: center;
+    }
+    .btn {
+      margin-right: 64px;
+      color: #999999;
+      font-size: 16px;
+      font-weight: 600;
+      letter-spacing: 0;
+      line-height: 22px;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+
+    .active {
+      position: relative;
+      font-weight: bold;
+      color: #7B68EE;
+      &:after {
+        position: absolute;
+        height: 4px;
+        width: 72px;
+        border-radius: 100px 100px 0 0;
+        background-color: #7B68EE;
+        content: '';
+        bottom: -25px;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+  }
+
+  .shareIcon {
+    margin-right: 8px;
+  }
+ 
+}

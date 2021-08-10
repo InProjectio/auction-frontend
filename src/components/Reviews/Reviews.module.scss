@@ -1,0 +1,39 @@
+.container{
+  .link{
+    text-decoration: underline;
+    color: #c91e33;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 1.2;
+}
+}
+
+.evaluate{
+  display:flex;
+  align-items:center;
+  margin-bottom: 35px;
+  .img {
+    width: 30px;
+    height: 30px;
+  }
+  .number{
+    margin:0 15px;
+    font-size: 25px;
+    line-height:1.16;
+    font-weight:500;
+    color:#c91e33;
+  }
+  .title{
+    margin-bottom: 0;
+    font-size: 25px;
+    line-height:1.16;
+    font-weight:500;
+  }
+}
+
+.empty {
+  font-size: 15px;
+  font-weight: 500;
+  color: #999999;
+  font-style: italic;
+}

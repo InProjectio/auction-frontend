@@ -1,0 +1,36 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 10px 13px 30px;
+  border-bottom: 1px solid #e2e2e2;
+  .left {
+    display: flex;
+    align-items: center;
+    .logoWrapper {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      margin-right: 12px;
+      background-color: #000000;
+    }
+    .name {
+      font-size: 15px;
+      color: #171c22;
+      margin-bottom: 0;
+    }
+  }
+  .btnClose {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .closeIcon {
+      width: 16px;
+      height: 16px;
+    }
+  }
+}

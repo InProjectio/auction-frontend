@@ -1,0 +1,27 @@
+.container {
+  margin-bottom: 20px;
+  overflow: hidden;
+  .optionContainer {
+    padding-right: 16px;
+  }
+  .option {
+    padding: 8px 10px 11px;
+    border-radius: 5px;
+    border: solid 1px #959090;
+    cursor: pointer;
+    .label {
+      font-size: 14px;
+      color: #333333;
+      margin-bottom: 4px;
+    }
+    .value {
+      font-size: 14px;
+      font-weight: bold;
+      color: #333333;
+      margin-bottom: 0;
+    }
+  }
+  .selected {
+    border: solid 3px #31708e;
+  }
+}

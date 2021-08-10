@@ -1,0 +1,420 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #FFFFFF;
+  box-shadow: 0 2px 5px 0 #EBEBEB;
+  height: 64px;
+  transition: all .2s;
+  .btnChat {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    border-radius: 6px;
+    background-color: #7B68EE;
+    padding: 0 24px;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: 22px;
+    margin-right: 40px;
+    .chatIcon {
+      margin-right: 8px;
+    }
+  }
+ 
+  .connect {
+    color: #7B68EE;
+    border: 1px solid #7B68EE;
+    padding: 0 10px;
+    border-radius: 20px;
+    background-color: #ffffff;
+    height: 36px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 14px;
+    margin-right: 24px;
+    &:hover {
+      background-color: #8B68EE;
+      color: #ffffff;
+    }
+  }
+  .transactions {
+    margin-right: 24px;
+  }
+  .logo {
+    width: 120px
+  }
+  @media (max-width: 767px) {
+    padding: 0;
+  }
+  .dropdownItem {
+    padding: 8px 20px;
+    display: block;
+    font-size: 14px;
+    font-weight: 500;
+    color: #000000;
+    // border-bottom: 1px solid #efefef;
+    cursor: pointer;
+    &:hover {
+      color: #000000;
+      text-decoration: none;
+      background-color: #f4f5f6;
+    }
+  }
+  .left {
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    transition: width .2s;
+    width: 100%;
+    .logoIcon {
+      width: 120px;
+    }
+    .title {
+      font-size: 18px;
+      color: #000000;
+      margin-bottom: 0;
+      margin-left: 10px;
+      flex: 1;
+    }
+    .row {
+      margin-right: 40px;
+    }
+    .marketPlace {
+      display: flex;
+      align-items: center;
+      margin-left: 24px;
+      font-size: 16px;
+      font-weight: bold;
+      color: #222222;
+    }
+    .marketPlaceIcon {
+      width: 20px;
+      margin-right: 8px;
+    }
+    .active {
+      position: relative;
+      &:after {
+        content: '';
+        position: absolute;
+        background: #A781E7;
+        border-radius: 2px;
+        height: 4px;
+        width: 100%;
+        left: 0;
+        bottom: -21px;
+      }
+      
+      .text {
+        color: #000000;
+      }
+    }
+    
+    .spaceIcon {
+      width: 36px;
+      height: 36px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #A781E7;
+      border-radius: 7px;
+      margin-right: 10px;
+      margin-left: 10px;
+      color: rgba(255, 255, 255, 0.65);
+    }
+    .spaceName {
+      font-size: 18px;
+      color: #000000;
+      margin-bottom: 0;
+    }
+    .icon {
+      width: 22px;
+      margin-right: 10px;
+    }
+    .text {
+      font-size: 15px;
+      color: rgba(0, 0, 0, 0.36);
+      margin-bottom: 0;
+    }
+  }
+  .middle {
+    flex: 1;
+    display: flex;
+    .menuWrapper {
+      margin-right: 30px;
+      margin-top: 15px;
+      width: 40px;
+    }
+    .btnMenu {
+      width: 40px;
+      height: 40px;
+      border: 1px solid #dddddd;
+      border-radius: 4px;
+      justify-content: center;
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      .icon {
+        font-size: 19px;
+        color: #000000;
+        width: 26px
+      }
+      span {
+        font-size: 14px;
+        color: #000000;
+      }
+    }
+    .menu {
+      display: flex;
+      align-items: center;
+      padding: 24px 30px 18px 30px;
+      margin-right: 8px;
+      .icon {
+        width: 16px;
+        margin-right: 8px;
+      }
+      .faFile {
+        width: 12px;
+        color: #333333;
+        margin-right: 8px;
+      }
+      span {
+        font-size: 14px;
+        font-weight: bold;
+        color: #999999
+      }
+    }
+
+    .active {
+      position: relative;
+      background-image: linear-gradient(to bottom, rgba(82,163,252, 0.1), rgba(82, 163, 252, 0.1) 69%);
+      span {
+        color: #486b94;
+        font-weight: bold;
+      }
+      &:after {
+        position: absolute;
+        content: '';
+        width: 100%;
+        height: 2px;
+        background-color: #486b94;
+        bottom: 0px;
+        left: 0;
+      }
+    }
+  }
+  .right {
+    display: flex;
+    align-items: center;
+    padding-right: 25px;
+    .currentAccount {
+      cursor: pointer;
+      font-size: 13px;
+      color: #7b68ee;
+      font-weight: bold;
+      height: 30px;
+      padding: 0 10px;
+      background-color: #f1f2f3;
+      display: flex;
+      align-items: center;
+      border-radius: 15px;
+      margin-right: 30px;
+    }
+    .connectToMetaMask {
+      display: flex;
+      align-items: center;
+      margin-right: 30px;
+      cursor: pointer;
+      .status {
+        width: 13px;
+        height: 13px;
+        border-radius: 50%;
+        background-color: #dc3545;
+        margin-right: 8px;
+      }
+      .statusConnected {
+        background-color: #66c066;
+      }
+      .connectToMetaMaskStatus {
+        color: #3498db;
+        font-size: 14px;
+        font-weight: 400;
+        white-space: nowrap;
+        margin-bottom: 0;
+      }
+
+      &:hover {
+        .connectToMetaMaskStatus {
+          text-decoration: underline;
+        }
+      }
+    }
+    .time {
+      font-size: 13px;
+      font-weight: bold;
+      color: #5085a5;
+      margin-bottom: 0;
+      margin-right: 60px;
+    }
+    .notification {
+      display: flex;
+      align-items: center;
+      position: relative;
+      background-color: #f5f5f5;
+      border-radius: 50%;
+      justify-content: center;
+
+      .unreaded {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: #3751FF;
+        position: absolute;
+        top: 0;
+        right: 0
+      }
+      .bellIcon {
+        width: 20px;
+      }
+    }
+    .transactions {
+      margin: 0 24px 0 0;
+    }
+    .userName {
+      display: flex;
+      align-items: center;
+      border-left: 1px solid #DFE0EB;
+      padding-left: 12px;
+      .name {
+        font-size: 14px;
+        font-weight: bold;
+        color: #252733;
+        margin-bottom: 0;
+       margin-right: 18px;
+       white-space: nowrap;
+
+      }
+      
+    }
+  }
+
+  .headerMenu {
+    display: none;
+  }
+
+  @media (max-width: 1024px) {
+    .left {
+      display: none;
+    }
+    .right {
+      display: none;
+    }
+    .middle {
+      display: none;
+    }
+    .headerMenu {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 20px;
+      flex: 1;
+      .menu {
+        display: flex;
+        align-items: center;
+        .icon {
+          width: 20px;
+          margin-right: 5px;
+        }
+        span {
+          font-size: 14px;
+          color: #333333;
+        }
+      }
+      .logoIcon {
+        width: 80px;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+      .logout {
+        font-size: 14px;
+        color: #3f6ad8 !important;
+      }
+    }
+  }
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  .btn {
+    font-size: 17px;
+    font-weight: bold;
+    color: #000000;
+  }
+  .btnRegister {
+    margin-left: 36px;
+    color: #ffffff;
+    background: #7463FC;
+    border-radius: 6px;
+    height: 36px;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    &:hover {
+      background: #8463FC;
+    }
+  }
+
+
+}
+
+.btnBecomeCompany {
+  margin-right: 40px;
+  color: #ffffff !important;
+  background: #7463FC;
+  border-radius: 6px;
+  height: 36px;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  &:hover {
+    background: #8463FC;
+  }
+}
+
+.btnJoinCompany {
+  margin-right: 20px;
+  background-color: #EDEAFF !important;
+  color: #7B68EE !important;
+  border-radius: 6px;
+  height: 36px;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  font-weight: 500;
+  &:hover {
+    background-color: #EDEAFF !important;
+    color: #7B68EE !important;
+  }
+}
+
+.hidden {
+  display: none !important;
+}

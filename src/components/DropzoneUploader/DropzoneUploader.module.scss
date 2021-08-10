@@ -1,0 +1,93 @@
+.inputComponent {
+  display: block;
+  padding-bottom: 20px;
+  width: 100%;
+  .text {
+    font-size: 16px;
+    font-weight: bold;
+    color: #777777;
+    text-align: center;
+    margin-bottom: 6px;
+    margin-top: 20px;
+  }
+  .or {
+    font-size: 14px;
+    color: #777777;
+    text-align: center;
+    margin-bottom: 6px;
+  }
+  .actions {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.dropzone {
+  border: 0;
+  overflow: auto;
+}
+
+
+.files {
+  width: 100%;
+  .fileWrapper {
+    padding: 10px 20px;
+    border-bottom: 1px solid #dddddd;
+  }
+  .row {
+    display: flex;
+    align-items: center;
+  }
+  .left {
+    display: flex;
+    align-items: center;
+  }
+  .percent {
+    font-size: 12px;
+    font-weight: bold;
+    color: #666666;
+    margin-left: 10px;
+    margin-bottom: 0;
+    width: 30px;
+    text-align: right;
+  }
+  .progressWrapper {
+    flex: 1;
+    height: 4px;
+    border-radius: 2px;
+    background-color: #dddddd;
+    margin-top: 4px;
+    .progress {
+      height: 4px;
+      background-color: #1f7da1;
+      border-radius: 2px;
+    }
+  }
+  .file {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    .loader {
+      position: absolute;
+      right: 50px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+    .fileName {
+      font-size: 14px;
+      color: #31708e;
+      margin-bottom: 0;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 1;
+      -webkit-box-orient: vertical;
+      margin-left: 10px;
+    }
+    .times {
+      width: 14px;
+    }
+  }
+}
+

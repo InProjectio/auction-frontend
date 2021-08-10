@@ -1,0 +1,74 @@
+.row {
+  display: flex;
+  align-items: center;
+  .avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 8px;
+  }
+  .info {
+    flex: 1
+  }
+  .fullname {
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 22px;
+    color: #222222;
+    margin-bottom: 0;
+  }
+  .text {
+    color: #666666;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: 16px;
+    margin-bottom: 2px;
+  }
+  .position {
+    color: #666666;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: 16px;
+    margin-bottom: 0;
+  }
+  
+}
+
+.btnEdit {
+  display: flex;
+  align-items: center;
+  color: #7B68EE !important;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 19px;
+  .editIcon {
+    width: 16px;
+    margin-right: 12px;
+  }
+}
+
+.entityName {
+  color: #555555;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 22px;
+  margin-bottom: 2px;
+}
+
+.subName {
+  color: #999999;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0;
+  line-height: 19px;
+}
+
+
+.disabled {
+  opacity: 0.6;
+  pointer-events: none;
+}

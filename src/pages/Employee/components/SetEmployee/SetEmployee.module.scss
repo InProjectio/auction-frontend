@@ -1,0 +1,76 @@
+.head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 24px 24px 16px 32px;
+  border-bottom: 1px solid #EBEBEB;
+  .title {
+    color: #222222;
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 0;
+    line-height: 32px;
+    margin-bottom: 0;
+  }
+}
+
+.content {
+  padding: 24px;
+  .employeeInfo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 24px ;
+    .avatar {
+      width: 64px;
+      height: 64px;
+      margin-right: 8px;
+      border-radius: 50%;
+    }
+    .info {
+      flex: 1
+    }
+    .fullname {
+      color: #222222;
+      font-size: 16px;
+      font-weight: bold;
+      letter-spacing: 0;
+      line-height: 22px;
+      margin-bottom: 3px;
+    }
+    .email {
+      color: #666666;
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 0;
+      line-height: 16px;
+      margin-bottom: 3px;
+    }
+    .position {
+      color: #666666;
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 0;
+      line-height: 16px;
+      margin-bottom: 0
+    }
+  }
+}
+
+.actions {
+  padding: 16px 24px;
+  display: flex;
+  justify-content: flex-end;
+  border-top: 1px solid #ebebeb;
+}
+
+.row {
+  display: flex;
+  align-items: flex-start;
+  .position {
+    flex: 2;
+    margin-right: 16px;
+  }
+  .role {
+    flex: 1
+  }
+}

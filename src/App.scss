@@ -1,0 +1,940 @@
+.appContainer {
+  width: 100%;
+  height: 100%;
+}
+.labelMoveUp {
+  // top: -10px;
+  // left: 0;
+  transform: translateY(-25px);
+  font-size: 12px;
+  // transition: all 0.5s ease-in-out;
+  transition: .5s;
+}
+input:-internal-autofill-selected {
+  background-color: #ffffff !important;
+}
+.floatingLabel {
+  position: absolute;
+  bottom: 8px;
+  left: 0;
+  color: #999999;
+  pointer-events: none;
+  // transition: all 0.5s ease-in-out;
+  transition: .5s;
+  font-size: 12px;
+}
+
+.rdtPicker {
+  width: 400px
+}
+
+.dropdown-item {
+  border-bottom: 1px solid #dddddd;
+  &:last-child {
+    border-bottom: 0;
+  }
+}
+
+.react-autosuggest__container {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+
+.react-autosuggest__input {
+  box-shadow: none !important;
+  height: 32px;
+  border-radius: 20px;
+  border: solid 1px #BFC7CA;
+  background-color: rgba(255, 255, 255, 0.25);
+  font-size: 14px;
+  color: #092631;
+  outline: 0;
+  padding: 0 15px;
+  width: 100%;
+  &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: #8d92a3;
+  }
+  &::-moz-placeholder { /* Firefox 19+ */
+    color: #8d92a3;
+  }
+  &:-ms-input-placeholder { /* IE 10+ */
+    color: #8d92a3;
+  }
+  &:-moz-placeholder { /* Firefox 18- */
+    color: #8d92a3;
+  }
+}
+
+.react-autosuggest__input--focused {
+  outline: none;
+}
+
+.react-autosuggest__input--open {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.react-autosuggest__suggestions-container {
+  display: none;
+}
+
+.react-autosuggest__suggestions-container--open {
+  display: block;
+  position: absolute;
+  top: 51px;
+  width: 100%;
+  border: solid 1px #efefef;
+  background-color: #ffffff;
+  font-weight: 300;
+  font-size: 16px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  max-height: 220px;
+  overflow-y: auto;
+  z-index: 999;
+}
+
+.react-autosuggest__suggestions-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.react-autosuggest__suggestion {
+  cursor: pointer;
+  padding: 10px 20px;
+}
+
+.react-autosuggest__suggestion--highlighted {
+  background-color: #ddd;
+}
+
+.ladda-button {
+  padding: 0;
+  outline: 0 !important;
+}
+.ladda-label {
+}
+.ladda-spinner {
+}
+.ladda-button[data-style=contract] {
+  min-width: 0;
+}
+
+.ladda-button[data-style=contract][data-loading] {
+}
+
+.ck-content {
+  max-height: 500px;
+  min-height: 300px;
+}
+
+.confirmMessage {
+  font-size: 13px;
+  color: #282828;
+  span {
+    color: #dc283d
+  }
+}
+
+.cropImage {
+  position: relative;
+  .Loading__bar___21yOt {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .Loading__spinner___11Pm4 {
+    position: absolute;
+    top: 8px;
+    left: 5px;
+  }
+}
+
+.DayPicker {
+  box-shadow: none;
+}
+.DayPickerKeyboardShortcuts_buttonReset {
+  display: none;
+}
+.DateRangePicker_picker {
+  top: 0px !important;
+}
+@media (max-width: 767px) {
+  .DayPicker {
+    margin: 0 20px;
+  }
+}
+
+
+.selectDay {
+  position: relative;
+  .DayPicker {
+    width: 100%;
+    .DayPicker-wrapper {
+      outline: 0;
+    }
+    .DayPicker-Months {
+      .DayPicker-Month {
+        flex: 1;
+        margin: 0;
+        &:first-child {
+          margin-right: 30px;
+        }
+      }
+
+      @media (max-width: 767px) {
+        .DayPicker-Month {
+          &:first-child {
+            margin-right: 0;
+          }
+        }
+      }
+    }
+    .DayPicker-WeekdaysRow {
+      border: 1px solid #e5e9ea;
+      .DayPicker-Weekday {
+        font-size: 15px;
+        font-weight: bold;
+        color: #092631;
+        line-height: 1.67;
+        padding: 14px 13px;
+        border-left: 1px solid #e5e9ea;
+        &:first-child {
+          border-left: 0
+        }
+      }
+    }
+
+    .DayPicker-Body {
+      border-right: 1px solid #e5e9ea;
+      .DayPicker-Week {
+        border-bottom: 1px solid #e5e9ea;
+        .DayPicker-Day{
+          font-size: 15px;
+          color: #092631;
+          line-height: 1.67;
+          padding: 14px 13px;
+          border-left: 1px solid #e5e9ea;
+          border-radius: 0;
+        }
+        .DayPicker-Day--outside {
+          background-color: #f8f8f8;
+          border-radius: 0;
+        }
+        .DayPicker-Day--selected:not(.DayPicker-Day--disabled):not(.DayPicker-Day--outside) {
+          background-color: #3da369;
+          color: #ffffff;
+        }
+      }
+    }
+
+    .DayPicker-Caption {
+      margin-bottom: 30px;
+      text-align: center;
+      padding: 0;
+      font-size: 16px;
+      font-weight: bold;
+      div {
+        font-size: 16px;
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+.dzu-dropzone {
+  border: 2px dashed #dddddd;
+  overflow: auto;
+}
+
+.errorWrapper {
+  .dzu-dropzone {
+    border: 2px dashed #ff6565 !important;
+  }
+  
+}
+
+.photos {
+  position: relative;
+  .Loading__bar___21yOt {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .Loading__spinner___11Pm4 {
+    position: absolute;
+    top: 8px;
+    left: 5px;
+  }
+}
+
+.photos {
+  position: relative;
+  .Loading__bar___21yOt {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .Loading__spinner___11Pm4 {
+    position: absolute;
+    top: 8px;
+    left: 5px;
+  }
+}
+
+.rid_date-container {
+  select {
+    box-shadow: none !important;
+    height: 40px;
+    border-radius: 4px;
+    border: solid 1px #BFC7CA;
+    background-color: rgba(255, 255, 255, 0.25);
+    font-size: 16px;
+    color: #092631;
+    outline: 0;
+    padding: 0 15px;
+    width: 100%;
+  }
+  .rid_day-container {
+    flex: 1;
+    label {
+      display: none
+    }
+  }
+  .rid_month-container {
+    flex: 2;
+    margin: 0 20px;
+    label {
+      display: none
+    }
+  }
+  .rid_year-container {
+    flex: 1;
+    label {
+      display: none
+    }
+  }
+
+  @media (max-width: 767px) {
+    flex-direction: column !important;
+    .rid_day-container {
+      margin-bottom: 10px;
+    }
+    .rid_month-container {
+      flex: 1;
+      margin: 0;
+      margin-bottom: 10px;
+    }
+  }
+}
+.error-message {
+  font-size: 12px;
+  line-height: 1.67;
+  margin-top: 10px;
+  display: block;
+  color: #ff6565;
+}
+
+.singleSelectContainer {
+  .rdt {
+    position: absolute;
+    top: 45px;
+    width: 100%;
+    .rdtPicker {
+      width: 100%;
+    }
+  }
+  .DayPicker {
+    
+  }
+}
+.table {
+  width: 100%;
+  background-color: #ffffff;
+  table {
+    margin-bottom: 0;
+  }
+  // thead {
+  //   position: sticky;
+  //   top: 60px;
+  // }
+  .tbHead {
+    background-color: #FAFAFA;
+    th {
+      font-size: 14px;
+      font-weight: bold;
+      line-height: 1.27;
+      padding: 20px;
+      vertical-align: top;
+      min-width: 100px;
+      color: #999999;
+      cursor: pointer;
+      position: relative;
+      white-space: nowrap;
+    }
+    .icon {
+      vertical-align: top;
+      margin-left: 10px;
+      opacity: 0.3;
+    }
+    .iconActive {
+      opacity: 1;
+    }
+    .unit {
+      margin-bottom: 0;
+      font-size: 12px;
+      color: #919b8e;
+      text-align: center;
+      font-weight: normal;
+      margin-top: 4px;
+      text-align: right;
+    }
+  }
+  .tbRow {
+    border-bottom: 1px solid #EBEBEB;
+    cursor: pointer;
+    td {
+      font-size: 14px;
+      line-height: 1.54;
+      padding: 17px 20px;
+      color: #666666;
+      font-weight: 500;
+    }
+  
+    &:hover {
+      background-color: #f7f9fb;
+    }
+  }
+
+  .mw250 {
+    max-width: 250px;
+  }
+  .mw300 {
+    max-width: 300px;
+  }
+}
+
+.mt10 {
+  margin-top: 10px;
+}
+
+.tableGray {
+  .thead {
+    background: #dadee3;
+    th {
+      font-size: 13px;
+      font-weight: normal;
+      text-align: center;
+      vertical-align: middle !important;
+      min-width: 70px;
+      padding: 8px;
+      font-weight: normal;
+      border: 1px solid #c4c9d0;
+      color: #333;
+    }
+  }
+  
+  .tbody {
+    background: #ffffff;
+    td {
+      font-size: 13px;
+      position: relative;
+      vertical-align: middle;
+      min-width: 70px;
+      padding: 8px;
+      font-weight: 500;
+      border: 1px solid #c4c9d0;
+      color: #333;
+    }
+    .largeValue {
+      font-size: 16px;
+    }
+  }
+}
+
+.tbAction {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  .btnRemove {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 30px;
+  }
+  .editIcon {
+    width: 26px;
+    color: #8be9fd;
+  }
+}
+
+.filterContainer {
+  .dropdown {
+    .dropdown-toggle {
+      height: 40px;
+      color: #092631;
+      justify-content: space-between;
+      padding: 0 16px;
+      width: 100%;
+      &:hover {
+        color: #092631;
+        background-color: #ffffff;
+      }
+    }
+    .btn-success {
+      color: #092631;
+      background-color: #ffffff;
+      border: solid 1px #BFC7CA;
+    }
+    .dropdown-menu {
+    
+
+    }
+
+    @media (max-width: 767px) {
+  }
+  
+}
+}
+
+.recharts-text {
+  font-size: 13px;
+}
+
+.orderSelectField {
+  height: 32px !important;
+  background-color: #ffffff !important;
+  border: solid 1px #BFC7CA !important;
+  border-radius: 4px;
+  font-size: 12px !important;
+}
+.customSearchInput {
+  input {
+    height: 30px !important;
+    border-radius: 4px;
+    border: solid 1px #BFC7CA !important;
+    background-color: #ffffff !important;
+    font-size: 12px !important;
+    padding-left: 38px !important;
+  }
+  a {
+    top: 4px !important;
+    svg {
+      width: 14px !important;
+    }
+  }
+}
+
+.filterContainer {
+  .dropdown {
+    .dropdown-toggle {
+      height: 40px;
+      color: #092631;
+      justify-content: space-between;
+      padding: 0 16px;
+      width: 100%;
+      &:hover {
+        color: #092631;
+        background-color: #ffffff;
+      }
+    }
+    .btn-success {
+      color: #092631;
+      background-color: #ffffff;
+      border: solid 1px #BFC7CA;
+    }
+    .dropdown-menu {
+    
+
+    }
+
+    @media (max-width: 767px) {
+  }
+  
+}
+}
+
+.mb20 {
+  margin-bottom: 20px;
+}
+
+
+.thumbCarousel {
+  .app-interval-input {
+    -webkit-appearance: none;
+    display: table-cell;
+    margin: 0;
+    padding: 9px;
+    border-radius: 5px;
+    font-size: 14px;
+    border: 3px solid #ccc;
+    background: #fff;
+    width: 100%;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+  
+  input.app-interval-input {
+    width: 65px;
+  }
+  
+  .app-checkboxes {
+    margin-top: 10px;
+  }
+  
+  .app-checkboxes li {
+    display: block;
+  }
+  
+  .thumbCarousel {
+    
+  }
+  .image-gallery-thumbnails .image-gallery-thumbnails-container {
+    text-align: left;
+  }
+  
+  .image-gallery-thumbnail {
+    position: relative;
+    width: 60px; /* The size you want */
+    border-width: 1px !important;
+    @media (max-width: 767px) {
+      width: 60px;
+    }
+  }
+  
+  .image-gallery-thumbnail-inner {
+    position: relative;
+    height: 100%;
+    width: 100%;
+  }
+  
+  .image-gallery-thumbnail-inner:after {
+    content: "";
+    display: block;
+    padding-bottom: 100%; /* The padding depends on the width, not on the height, so with a padding-bottom of 100% you will get a square */
+  }
+  
+  .image-gallery-thumbnail-image {
+    position: absolute; /* Take your picture out of the flow */
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0; /* Make the picture taking the size of it's parent */
+    width: 100%; /* This if for the object-fit */
+    height: 100%; /* This if for the object-fit */
+    object-fit: cover; /* Equivalent of the background-size: cover; of a background-image */
+    object-position: center;
+  }
+
+  .image-gallery-thumbnail {
+    width: 115px !important;
+    @media (max-width: 767px) {
+      width: 60px !important;
+    }
+  }
+  
+  .image-gallery-slide {
+    img {
+      height: 450px;
+    }
+  
+    iframe {
+      width: 100%;
+      height: 220px;
+    }
+
+    @media (max-width: 1024px) {
+      img {
+        height: 300px;
+      }
+  
+      iframe {
+        width: 100%;
+        height: 220px;
+      }
+    }
+  
+    @media (max-width: 767px) {
+      img {
+        height: 200px;
+      }
+  
+      iframe {
+        width: 100%;
+        height: 200px;
+      }
+    }
+  }
+  
+  .image-gallery.fullscreen-modal  {
+    z-index: 999;
+    .image-gallery-thumbnails-wrapper {
+      display: none;
+    }
+  
+    .image-gallery-image {
+      height: 100%;
+    }
+    iframe {
+      height: 100vh;
+    }
+  }
+  
+  .play-button {
+    cursor: pointer;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    height: 60px;
+    width: 100px;
+    background-color: rgba(0,0,0,.7);
+    border-radius: 5px;
+    &:after {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 16.5px;
+      left: 40px;
+      margin: 0 auto;
+      border-style: solid;
+      border-width: 12.5px 0 12.5px 20px;
+      border-color: transparent transparent transparent rgba(255,255,255,1);
+    }
+  }
+}
+
+.bm-menu {
+ overflow: hidden;
+ height: calc(100% - 62px) !important;
+}
+
+.bm-item-list {
+  height: calc(100%) !important;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.bm-item {
+  outline: none !important;
+}
+
+.bm-cross-button, .bm-burger-button, .react-burger-menu-btn {
+  display: none !important;
+}
+
+.ck-dropdown__arrow {
+  z-index: 0 !important;
+}
+
+.image-gallery-thumbnails-container {
+  text-align: left !important;
+}
+
+.slick-list> div {
+  margin-left:0;
+}
+
+.DateInput_1 {
+  display: none;
+}
+
+.DateRangePickerInput_arrow {
+  display: none;
+}
+
+.RangerDatePicker_datePickerWrapper__101PN .RangerDatePicker_dateTime__EhpD3 {
+  margin-left: 0;
+}
+
+.rangerValue {
+  .dropdown {
+    width: 100%;
+  }
+}
+
+.CalendarDay__selected, .CalendarDay__selected:active, .CalendarDay__selected:hover {
+  background-color: rgba(82, 163, 252, 1);
+  border: 1px solid rgba(82, 163, 252, 1);
+}
+
+.CalendarDay__selected_span {
+  background-color: rgba(82, 163, 252, 0.7) !important;
+  border: 1px solid rgba(82, 163, 252, 0.8) !important;
+}
+.CalendarDay__hovered_span,
+.CalendarDay__hovered_span:hover {
+  background: rgba(82, 163, 252, 0.7);
+  border: 1px double rgba(82, 163, 252, 0.8);
+  color: #486b94 !important;
+}
+.CalendarDay__hovered_span:active {
+  background: rgba(82, 163, 252, 0.7);
+  border: 1px double rgba(82, 163, 252, 0.8);
+  color: #486b94 !important;
+}
+
+.group {
+  box-shadow: 0 0.46875rem 2.1875rem rgba(4,9,20,0.03), 0 0.9375rem 1.40625rem rgba(4,9,20,0.03), 0 0.25rem 0.53125rem rgba(4,9,20,0.05), 0 0.125rem 0.1875rem rgba(4,9,20,0.03);
+  border-width: 0;
+  transition: all .2s;
+  background-color: #fff;
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
+
+.groupBody {
+  padding: 20px;
+}
+
+.groupForm {
+  .groupTitle {
+    font-size: 20px;
+    font-weight: bold;
+    color: #000000;
+    margin-bottom: 0
+  }
+  .mb20 {
+    margin-bottom: 20px;
+  }
+  .groupTitleLarge {
+    font-size: 30px;
+    font-weight: bold;
+    color: #000000;
+    margin-bottom: 20px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  .mt20 {
+    margin-top: 20px;
+  }
+  .fieldWrapper {
+    display: flex;
+    align-items: center;
+    padding: 24px 0;
+    border-bottom: 1px solid #dddddd;
+    flex-flow: row wrap;
+    .label {
+      width: 250px;
+      font-size: 14px;
+      line-height: 1.25;
+      color: #666666;
+      margin-bottom: 0;
+    }
+    .mt0 {
+      margin-top: 0;
+    }
+    .mt10 {
+      margin-top: 10px;
+    }
+    .required {
+      font-size: 16px;
+      line-height: 1.25;
+      color: #ff6565;
+    }
+    .largeLabel {
+      width: 280px;
+      font-size: 20px;
+      color: #092631;
+      margin-bottom: 0;
+      font-weight: bold;
+    }
+    .smallLabel {
+      font-size: 12px;
+      line-height: 1.67;
+      color: rgba(0,0,0,0.6)
+    }
+    .field {
+      flex: 1;
+      padding-right: 100px;
+      max-width: 100%;
+      .note {
+        font-size: 13px;
+        color: #666666;
+        margin-bottom: 0;
+      }
+    }
+    .row {
+      display: flex;
+      align-items: center;
+      .fieldContainer {
+        flex: 1
+      }
+      .unit {
+        width: 160px;
+        margin-left: 10px;
+      }
+    }
+  }
+
+  .start {
+    align-items: flex-start;
+    .label {
+      margin-top: 6px;
+    }
+  }
+
+  .actions {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 20px;
+  }
+
+  .bb0 {
+    border-bottom: 0;
+  }
+
+  @media (max-width: 767px) {
+    padding: 20px;
+    .fieldWrapper {
+      flex-direction: column;
+      padding: 16px 0;
+      .label {
+        width: 100%;
+        margin-bottom: 10px;
+      }
+      .field {
+        width: 100%;
+        padding-right: 0;
+      }
+    }
+  }
+}
+
+.ps__thumb-y {
+  background-color: rgba(0,0,0,0.1) !important;
+}
+
+.mt20 {
+  margin-top: 20px;
+}
+
+.images {
+  .slick-dots {
+    bottom: 7px;
+  }
+}
+
+.slideDisabled {
+  pointer-events: none;
+  // background-color: #f1f1f1 !important;
+}
+
+@import "~react-image-gallery/styles/scss/image-gallery.scss";
+
+.serviceMobile {
+  .slick-dots {
+    top: 0;
+    z-index: -1;
+  }
+}
+
+.ml10 {
+  margin-left: 10px; 
+}

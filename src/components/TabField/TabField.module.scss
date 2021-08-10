@@ -1,0 +1,25 @@
+.container {
+  display: flex;
+  align-items: center;
+  border-radius: 18px;
+  overflow: hidden;
+  background-color: #d7d8d9;
+  .option {
+    flex: 1;
+    height: 36px;
+    background-color: #d7d8d9;
+    font-size: 14px;
+    font-weight: 500;
+    color: #6e7580;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  .active {
+    background-color: #c91e33;
+    color: #ffffff;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+    border-radius: 18px;
+  }
+}

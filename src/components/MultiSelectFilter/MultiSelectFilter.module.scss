@@ -1,0 +1,32 @@
+.container {
+  display: flex;
+  align-items: center;
+  .option {
+    padding: 4px 16px;
+    border-radius: 8px;
+    border: solid 1px #707070;
+    background-color: #f7f9fb;
+    margin-right: 20px;
+    font-size: 12px;
+    color: #919b8e;
+    cursor: pointer;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  .action {
+    border: 1px solid #5085a5;
+    background-color: rgba(80,133,165, 0.5);
+  }
+  .active {
+    background: #31708e;
+    color: #ffffff;
+  }
+
+  @media (max-width: 767px) {
+    flex-flow: row wrap;
+    .option {
+      margin-bottom: 10px;
+    }
+  }
+}

@@ -1,0 +1,18 @@
+.container {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  border: 2px solid #4c5057;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .circle {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #c91e33;
+  }
+}
+.active {
+  border: 2px solid #c91e33;
+}

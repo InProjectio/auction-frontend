@@ -1,0 +1,84 @@
+.container {
+  .actions {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  .btnCancel {
+    font-size: 15px;
+    font-weight: 500;
+    text-decoration: underline;
+    margin-right: 50px;
+  }
+
+  .btnConfirm {
+    width: 170px;
+  }
+
+  .row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+
+  .inputWrapper {
+    flex: 1
+  }
+
+  .btnApply {
+    height: 50px;
+    padding: 0 30px;
+    background-color: #6e7580;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 500;
+    color: #ffffff;
+  }
+
+  .rowBetween {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .label {
+      font-size: 16px;
+      margin-bottom: 0;
+    }
+    .note {
+      font-size: 14px;
+      color: #4c5057;
+      margin-bottom: 0;
+    }
+  }
+
+  .code {
+    border-radius: 10px;
+    border: solid 1px #6e7580;
+    background-color: #ffffff;
+    height: 100px;
+    .titleWrapper {
+      width: 132px;
+      background-color: #3c74ef;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .middle {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 0 26px;
+    }
+    .btnUseNow {
+      height: 30px;
+      padding: 0 10px;
+      border-radius: 16px;
+      display: flex;
+      align-items: center;
+    // background-color: #efefef;
+    }
+  }
+
+}

@@ -1,0 +1,13 @@
+.container {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  font-weight: bold;
+  color: #486b94;
+  line-height: 2.29;
+  border: 0;
+  .backIcon {
+    width: 16px;
+    margin-right: 8px;
+  }
+}

@@ -1,0 +1,50 @@
+.container {
+  padding: 20px 0 0 0;
+  .actions {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    border-top: 1px solid #dddddd;
+    .btnCancel {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 16px 0;
+      font-size: 16px;
+      font-weight: bold;
+      color: #666666;
+      border-right: 1px solid #dddddd;
+      &:hover {
+        color: #666666;
+      }
+    }
+    .btnOk {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 16px 0;
+      font-size: 16px;
+      font-weight: bold;
+      color: #3f6ad8;
+      &:hover {
+        color: #3f6ad8;
+      }
+    }
+    a {
+      flex: 1
+    }
+  }
+  .title {
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+  }
+  .description {
+    font-size: 14px;
+    text-align: center;
+    padding: 0 40px;
+    margin-bottom: 20px;
+  }
+}

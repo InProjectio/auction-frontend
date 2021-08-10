@@ -1,0 +1,404 @@
+.menuContainer {
+  height: calc(100% - 20px);
+  position: relative;
+  .space {
+    height: 160px;
+  }
+}
+
+.wrapper {
+  position: relative;
+  height: calc(100%);
+}
+
+.bottom {
+  padding: 20px;
+  width: 100%;
+  height: auto;
+  z-index: 99999;
+  background-color: #ffffff;
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  .copyright {
+    text-align: center;
+    font-size: 12px;
+    color: #999999;
+    margin-bottom: 0;
+  }
+  .socials {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    .social {
+      padding: 0 10px;
+      .icon {
+        width: 20px;
+      }
+    }
+  }
+}
+
+.wrapperCollapse {
+  
+  .bottom {
+    display: none;
+  }
+  &:hover {
+    .bottom {
+      display: block;
+    }
+  }
+}
+
+.container {
+  background-color: #ffffff;
+  height: calc(100%);
+  position: relative;
+  overflow: hidden;
+  transition: width 350ms;
+  border-right: 1px solid #EBEBEB;
+  
+  .logoWrapper {
+    text-align: center;
+    padding: 20px 0 26px 0;
+    .logo {
+      width: 161px;
+    }
+    .logoMobile {
+      display: none;
+    }
+  }
+
+  .btnCreateBidding {
+    margin: 20px auto;
+    height: 40px;
+    border-radius: 6px;
+    background-color: #7B68EE;
+    box-shadow: 0 1px 10px 0 #CCCCCC;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    span {
+      font-size: 16px;
+      font-weight: bold;
+      letter-spacing: 0;
+      line-height: 22px;
+      color: #ffffff;
+    }
+    .createBidding {
+      width: 16px;
+      margin-right: 10px;
+    }
+  }
+}
+
+
+.hoverContainer {
+  transition: width .4s;
+}
+
+.divider {
+  border-top: 1px solid #ebebeb;
+}
+
+.menuItem {
+  padding: 0 12px 0 20px;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+  flex-wrap: nowrap;
+  transition: all .2s;
+
+  .icon {
+    position: absolute;
+    right: 10px;
+    width: 17px;
+    transition: transform 300ms;
+  }
+  .iconUp {
+    transform: rotate(180deg);
+  }
+
+  
+  span {
+    color: #555555;
+    font-size: 16px;
+    display: block;
+    transition: all .2s;
+    padding-left: 32px;
+    font-weight: bold;
+    flex: 1;
+  }
+  .iconWrapper {
+    width: 26px;
+    height: 26px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 20px;
+    z-index: 9;
+    .icon {
+      width: 17px;
+    }
+    .iconActive {
+      display: none;
+    }
+  }
+
+  .menuTitle {
+    flex: 1
+  }
+
+  .numberNotifications {
+    width: 20px;
+    height: 20px;
+    background: #7879F1;
+    box-shadow: 0px 2.1243px 4.2486px rgba(0, 0, 0, 0.01), 0px 2.8324px 5.6648px rgba(0, 0, 0, 0.08), 0px 0.7081px 8.4972px rgba(0, 0, 0, 0.04);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    color: #ffffff;
+    position: absolute;
+    position: absolute;
+    top: 0px;
+    left: 35px;
+  }
+
+  &:hover {
+    background: #EDEAFF;
+    text-decoration: none;
+  }
+}
+
+.active {
+  background: #EDEAFF;
+  position: relative;
+  span {
+    color: #7B68EE;
+    font-weight: bold;
+  }
+  &:after{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 4px;
+    background-color: #7B68EE;
+    left: 0;
+    top: 0
+  }
+  .iconWrapper {
+    .icon {
+      display: none;
+    }
+    .iconActive {
+      display: block;
+    }
+  }
+}
+
+
+.mt30 {
+  margin-top: 30px;
+}
+
+.mt60 {
+  margin-top: 55px;
+}
+
+.mb30 {
+  margin-bottom: 30px;
+}
+
+
+
+.expandMenuActive {
+  font-weight: bold;
+  border-bottom: 1px solid #ebebeb;
+}
+
+.expandMenuCollapse {
+  .subMenus {
+    padding-left: 0;
+    display: none;
+    .text {
+      display: none;
+    }
+  }
+}
+
+.collapse {
+  .btnCreateBidding {
+    width: 40px;
+    .createBidding {
+      margin-right: 0;
+    }
+    span {
+      display: none;
+    }
+  }
+  .logoWrapper {
+    .logo {
+      display: none;
+    }
+    .logoMobile {
+      display: inline-block;
+      width: 34px;
+    }
+  }
+  .downIcon {
+    display: none;
+  }
+  .rowBetween {
+    display: none;
+  }
+  .heading {
+   display: none;
+  }
+  .menuItem {
+    .faIcon {
+      display: none;
+    }
+    span {
+      text-indent: -280px;
+    }
+    .notificationWrapper {
+      margin-left: 4px;
+      width: 14px;
+      height: 14px;
+      font-size: 9px;
+      top: 20px
+    }
+  }
+  .spaceTitle {
+    display: none;
+  }
+  &:hover {
+    .btnCreateBidding {
+      width: 200px;
+      .createBidding {
+        margin-right: 10px;
+      }
+      span {
+        display: block;
+      }
+    }
+    .logoWrapper {
+      text-align: center;
+      .logo {
+        display: inline-block;
+      }
+      .logoMobile {
+        display: none;
+      }
+    }
+    .expandMenuCollapse {
+      .subMenus {
+        padding-left: 32px;
+        display: block;
+        .text {
+          display: block;
+        }
+      }
+    }
+    .heading {
+      display: block;
+     }
+     .menuItem {
+      .iconWrapper {
+        left: 12px;
+      }
+      .icon {
+        display: block;
+      }
+      .iconActive {
+        display: none;
+      }
+      .faIcon {
+        display: block;
+      }
+      span {
+        text-indent: 0;
+      }
+     }
+     .active {
+      .icon {
+        display: none;
+      }
+      .iconActive {
+        display: block;
+      }
+     }
+  }
+}
+
+.settingsWrapper {
+  margin-top: 16px;
+}
+
+.subMenus {
+  padding-top: 10px;
+  .menuItem {
+    margin: 0 24px 4px 24px;
+    height: 34px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+    flex-wrap: nowrap;
+    transition: all .2s;
+    padding: 0 13px;
+    .text {
+      color: #999999;
+      font-size: 16px;
+      font-weight: 500;
+      display: block;
+      transition: all .2s;
+      padding-left: 8px;
+      margin-bottom: 0;
+    }
+    
+  }
+
+  .breadcrumb {
+    visibility: hidden;
+  }
+
+  .active {
+    border-radius: 6px;
+    .breadcrumb {
+      visibility: visible;
+    }
+    .text {
+      color: #7B68EE;
+      font-weight: bold;
+    }
+    &:after {
+      width: 0;
+    }
+  }
+ 
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  .marketPlaceIcon {
+    width: 16px;
+    margin-right: 8px;
+  }
+  span {
+    font-size: 15px;
+    font-weight: 500;
+  }
+}

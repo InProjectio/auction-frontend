@@ -1,0 +1,79 @@
+
+.container {
+  padding: 20px;
+  @media (max-width: 767px) {
+    padding-bottom: 50px;
+  }
+  .input {
+    box-shadow: none !important;
+    border-radius: 4px;
+    border: solid 1px #BFC7CA;
+    background-color: rgba(255, 255, 255, 0.25);
+    font-size: 16px;
+    color: #092631;
+    height: 110px;
+    outline: 0;
+    padding: 15px;
+    width: 100%;
+    position: relative;
+    &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+      color: #8d92a3;
+    }
+    &::-moz-placeholder { /* Firefox 19+ */
+      color: #8d92a3;
+    }
+    &:-ms-input-placeholder { /* IE 10+ */
+      color: #8d92a3;
+    }
+    &:-moz-placeholder { /* Firefox 18- */
+      color: #8d92a3;
+    }
+  }
+  .note {
+    font-size: 16px;
+    color: #666666;
+    font-style: italic;
+    margin-bottom: 16px;
+  }
+  .reason {
+    margin-bottom: 16px;
+    display: flex;
+    text-align: center;
+    cursor: pointer;
+    .radio {
+      margin-right: 16px;
+    }
+    .reasonName {
+      font-size: 16px;
+      color: #5f6366;
+      margin-bottom: 0;
+    }
+  }
+  
+  .row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    .title {
+      font-size: 22px;
+      font-weight: bold;
+      color: #333333;
+      margin-bottom: 0
+    }
+    .closeIcon {
+      font-size: 24px;
+      width: 17px;
+    }
+  }
+  .actions {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 16px;
+  }
+
+    @media (max-width: 767px) {
+
+    }
+}

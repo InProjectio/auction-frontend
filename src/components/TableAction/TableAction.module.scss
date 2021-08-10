@@ -1,0 +1,31 @@
+.btnCopy {
+  font-size: 12px;
+  color: #007aff !important;
+  margin-right: 10px;
+}
+
+.ml10 {
+  margin-left: 10px;
+}
+
+button {
+  margin-bottom: 10px;
+}
+
+.col{
+  flex-direction: column !important;
+  align-items: flex-end;
+  a, button {
+    margin-bottom: 10px;
+    margin-left: 10px;
+  }
+}
+
+.btnLg {
+  height: 45px;
+  margin-bottom: 0;
+}
+
+.containerLg {
+  align-items: center;
+}

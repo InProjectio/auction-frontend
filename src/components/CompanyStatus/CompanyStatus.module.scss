@@ -1,0 +1,26 @@
+.container {
+  display: flex;
+  align-items: center;
+  height: 24px;
+  border-radius: 12px;
+  background-color: #EAFFF0;
+  padding: 0 8px;
+  .icon {
+    width: 13px;
+    margin-right: 4px;
+  }
+  .text {
+    font-size: 12px;
+    font-weight: bold;
+    color: #26AF39;
+    margin-bottom: 0;
+  }
+}
+
+.unverify {
+  background-color: #FFF1D5;
+  .text {
+    color: #EAA618;
+    
+  }
+}

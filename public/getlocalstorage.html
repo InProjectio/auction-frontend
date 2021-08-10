@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#000000" />
+   
+    <title>InProject | Project Management and Auction with blockchain integration</title>
+    <meta name="author" content="Inproject"/>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+    <script type='text/JavaScript'>
+      const domains = [
+        "https://app.inproject.io",
+        "https://auction.inproject.io"
+      ]
+
+      let messageEvent = null
+
+      window.addEventListener("message", messageHandler, false);
+      function messageHandler(event) {
+        messageEvent = event
+        if (!domains.includes(event.origin))
+          return;
+        const { action, key, value } = event.data
+        if (action == 'save'){
+          window.localStorage.setItem(key, value)
+        } else if (action == 'get') {
+          const data = window.localStorage.getItem(key)
+          event.source.postMessage({
+            action: 'returnData',
+            key,
+            value: data
+          }, '*')
+        } else if (action === 'remove') {
+          window.localStorage.removeItem(key)
+        } else if (action === 'clear') {
+          window.localStorage.clear()
+        } else if (action === 'logout') {
+          window.localStorage.removeItem('accessToken')
+          window.localStorage.removeItem('userInfo')
+          window.localStorage.removeItem('firebaseToken')
+          window.localStorage.removeItem('walletAddress')
+        } else if (action === 'login') {
+          window.localStorage.setItem('accessToken', value.accessToken)
+          window.localStorage.setItem('userInfo', value.userInfo)
+          if (value.companyId) {
+            window.localStorage.setItem('companyId', value.companyId)
+          }
+        } else if (action === 'getAllStorage') {
+          if (window.localStorage.getItem('accessToken')) {
+            const data = {
+              accessToken: window.localStorage.getItem('accessToken'),
+              userInfo: window.localStorage.getItem('userInfo'),
+              walletAddress: window.localStorage.getItem('walletAddress'),
+              companyId: window.localStorage.getItem('companyId'),
+            }
+            event.source.postMessage({
+              action: 'returnData',
+              key,
+              value: data
+            }, '*')
+          }
+          
+        }
+      }
+     
+    </script>
+  </body>
+</html>
