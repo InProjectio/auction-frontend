@@ -169,19 +169,19 @@ export const checkMetaMask = (showNotification, handleClose) => {
 export const checkChainId = async () => {
   try {
     const chainId = await web3.eth.getChainId()
-    if (chainId !== 97) {
+    if (chainId !== +process.env.REACT_APP_CHAIN_ID) {
       await window.ethereum.request({
         method: 'wallet_addEthereumChain',
         params: [{
-          chainId: '0x61',
-          chainName: 'Inproject',
+          chainId: process.env.REACT_APP_CHAIN_ID_HEX,
+          chainName: process.env.REACT_APP_CHAIN_NAME,
           nativeCurrency: {
             name: 'Binance Coin',
             symbol: 'BNB',
             decimals: 18
           },
-          rpcUrls: ['https://data-seed-prebsc-1-s1.binance.org:8545/'],
-          blockExplorerUrls: ['https://testnet.bscscan.com/']
+          rpcUrls: [process.env.REACT_APP_RPC_URL],
+          blockExplorerUrls: [process.env.REACT_APP_EXPLORE_URL]
         }]
       })
       return true
